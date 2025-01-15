@@ -1,0 +1,29 @@
+//Linear Search.
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        // System.out.println("Try programiz.pro");
+        Scanner in=new Scanner(System.in);
+        int s=0,target,c=0;
+        int arr[]=new int[5];
+        System.out.println("Enter the array elements ");
+        for(int i=0;i<5;i++){
+            arr[i]=in.nextInt();
+           
+            
+        }
+        System.out.println("Enter the target element to be found");
+        target=in.nextInt();
+        for(int i=0;i<5;i++){
+            if(arr[i]==target){
+                c=1;
+                break;
+            }
+        }
+        if(c==1)
+            System.out.println("Yes,present");
+        else
+            System.out.println("No,not present");
+       
+    }
+}
